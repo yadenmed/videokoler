@@ -9,7 +9,7 @@
 
 
 			var peer = new Peer($scope.username, {
-				key: 'your peerserver cloud key',
+				key: 'dhcycgs877t4kj4i',
 				config: {'iceServers': [
 		            { url: 'stun:stun1.l.google.com:19302' },
 		            { url: 'turn:numb.viagenie.ca', credential: 'muazkh', username: 'webrtc@live.com' }
