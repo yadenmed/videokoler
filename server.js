@@ -1,13 +1,8 @@
 var express = require('express'),
     app = express();
-var express_peer_server = require('peer').ExpressPeerServer;
-var peer_options = {
-    debug: true
-};
-var server = app.listen(3000);
+
 
 app.use(express.static('www'));
-app.use('/peerjs', express_peer_server(server, peer_options));
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 app.all('*', function(req, res, next) {
