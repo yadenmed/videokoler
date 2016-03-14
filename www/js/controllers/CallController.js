@@ -8,13 +8,21 @@
 
 
 
+		// var peer = new Peer($scope.username, {
+			// 	key: 'dhcycgs877t4kj4i',
+			// 	config: {'iceServers': [
+		 //            { url: 'stun:stun1.l.google.com:19302' },
+		 //            { url: 'turn:numb.viagenie.ca', credential: 'muazkh', username: 'webrtc@live.com' }
+   //      		]}
+			// });
 			var peer = new Peer($scope.username, {
-				key: 'dhcycgs877t4kj4i',
-				config: {'iceServers': [
-		            { url: 'stun:stun1.l.google.com:19302' },
-		            { url: 'turn:numb.viagenie.ca', credential: 'muazkh', username: 'webrtc@live.com' }
-        		]}
-			});
+			        host: 'https://yadenvisio.herokuapp.com', port: 3000, path: '/peerjs',
+			        config: {'iceServers': [
+			            { url: 'stun:stun1.l.google.com:19302' },
+			            { url: 'turn:numb.viagenie.ca', credential: 'muazkh', username: 'webrtc@live.com' }
+			        ]}
+			    }
+			);
 
 			function getVideo(successCallback, errorCallback){
 			    navigator.webkitGetUserMedia({audio: true, video: true}, successCallback, errorCallback);
