@@ -16,7 +16,7 @@
    //      		]}
 			// });
 			var peer = new Peer($scope.username, {
-			        host: 'https://yadenvisio.herokuapp.com', port: 3000, path: '/peerjs',
+			        host: '/', port: 3000, 
 			        config: {'iceServers': [
 			            { url: 'stun:stun1.l.google.com:19302' },
 			            { url: 'turn:numb.viagenie.ca', credential: 'muazkh', username: 'webrtc@live.com' }
